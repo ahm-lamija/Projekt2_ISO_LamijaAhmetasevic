@@ -1,0 +1,121 @@
+{"level":"info","message":"Backend spreman na portu 5000","timestamp":"2026-04-15T18:13:01.497Z"}
+{"level":"error","message":"Greška pri povezivanju na bazu: Error: connect ECONNREFUSED 172.18.0.3:3306\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)","timestamp":"2026-04-15T18:13:01.527Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T18:13:18.388Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T18:13:33.066Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T18:13:33.090Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T18:13:35.473Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T18:13:36.750Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T18:13:37.227Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T18:13:37.386Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T18:13:37.573Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T18:13:37.761Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T18:13:43.361Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T18:13:43.383Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T18:13:44.842Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T18:13:45.399Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T18:13:45.551Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T18:13:45.759Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T18:14:00.167Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T18:14:01.289Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T18:14:03.087Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T18:14:05.650Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T18:14:06.169Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T18:14:06.299Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T18:14:06.442Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T18:14:06.653Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T18:19:23.377Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T18:19:28.755Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T18:19:28.768Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T18:19:30.063Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T18:19:30.645Z"}
+{"level":"info","message":"Backend spreman na portu 5000","timestamp":"2026-04-15T18:23:09.634Z"}
+{"level":"error","message":"Greška pri povezivanju na bazu: Error: connect ECONNREFUSED 172.18.0.3:3306\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)","timestamp":"2026-04-15T18:23:09.700Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T18:23:16.946Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T18:23:21.815Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T18:23:21.834Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T18:23:23.420Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T18:23:24.150Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T18:23:24.310Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T18:23:24.696Z"}
+{"level":"info","message":"Backend spreman na portu 5000","timestamp":"2026-04-15T18:23:49.979Z"}
+{"level":"error","message":"Greška pri povezivanju na bazu: Error: connect ECONNREFUSED 172.18.0.3:3306\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)","timestamp":"2026-04-15T18:23:50.001Z"}
+{"level":"info","message":"Backend spreman na portu 5000","timestamp":"2026-04-15T18:25:09.927Z"}
+{"level":"info","message":"Uspješno povezano na MySQL bazu.","timestamp":"2026-04-15T18:25:10.060Z"}
+{"level":"info","message":"Ažurirana količina za ID 1: Promjena 1","timestamp":"2026-04-15T18:25:26.463Z"}
+{"level":"info","message":"Ažurirana količina za ID 1: Promjena 1","timestamp":"2026-04-15T18:25:27.104Z"}
+{"level":"info","message":"Ažurirana količina za ID 1: Promjena -1","timestamp":"2026-04-15T18:25:27.965Z"}
+{"level":"info","message":"Obrisan proizvod sa ID: 1","timestamp":"2026-04-15T18:25:32.420Z"}
+{"level":"info","message":"Dodan novi proizvod: Laptop x (Kol: 1)","timestamp":"2026-04-15T18:25:36.933Z"}
+{"level":"info","message":"Dodan novi proizvod: Laptop x (Kol: 1)","timestamp":"2026-04-15T18:31:06.551Z"}
+{"level":"info","message":"Obrisan proizvod sa ID: 3","timestamp":"2026-04-15T18:31:15.338Z"}
+{"code":"ER_DUP_ENTRY","errno":1062,"level":"error","sql":"INSERT INTO proizvodi (naziv, kolicina) VALUES ('Laptop x', '1')","sqlMessage":"Duplicate entry 'Laptop x' for key 'proizvodi.naziv'","sqlState":"23000","timestamp":"2026-04-15T18:33:43.381Z"}
+{"code":"ER_DUP_ENTRY","errno":1062,"level":"error","sql":"INSERT INTO proizvodi (naziv, kolicina) VALUES ('Laptop x', '3')","sqlMessage":"Duplicate entry 'Laptop x' for key 'proizvodi.naziv'","sqlState":"23000","timestamp":"2026-04-15T18:33:49.598Z"}
+{"code":"ER_DUP_ENTRY","errno":1062,"level":"error","sql":"INSERT INTO proizvodi (naziv, kolicina) VALUES ('Laptop x', '3')","sqlMessage":"Duplicate entry 'Laptop x' for key 'proizvodi.naziv'","sqlState":"23000","timestamp":"2026-04-15T18:34:01.443Z"}
+{"level":"info","message":"Dodan novi proizvod: nez (Kol: 1)","timestamp":"2026-04-15T18:34:09.840Z"}
+{"level":"info","message":"Ažurirana količina za ID 8: Promjena 1","timestamp":"2026-04-15T18:34:13.538Z"}
+{"level":"info","message":"Ažurirana količina za ID 8: Promjena 1","timestamp":"2026-04-15T18:34:14.216Z"}
+{"level":"info","message":"Ažurirana količina za ID 8: Promjena 1","timestamp":"2026-04-15T18:34:14.855Z"}
+{"level":"info","message":"Ažurirana količina za ID 8: Promjena 1","timestamp":"2026-04-15T18:34:15.421Z"}
+{"level":"info","message":"Ažurirana količina za ID 8: Promjena 1","timestamp":"2026-04-15T18:34:17.560Z"}
+{"level":"info","message":"Ažurirana količina za ID 8: Promjena 1","timestamp":"2026-04-15T18:34:17.861Z"}
+{"level":"info","message":"Ažurirana količina za ID 8: Promjena 1","timestamp":"2026-04-15T18:34:18.449Z"}
+{"code":"ER_DUP_ENTRY","errno":1062,"level":"error","sql":"INSERT INTO proizvodi (naziv, kolicina) VALUES ('nez', '3')","sqlMessage":"Duplicate entry 'nez' for key 'proizvodi.naziv'","sqlState":"23000","timestamp":"2026-04-15T18:36:10.708Z"}
+{"code":"ER_DUP_ENTRY","errno":1062,"level":"error","sql":"INSERT INTO proizvodi (naziv, kolicina) VALUES ('nez', '1')","sqlMessage":"Duplicate entry 'nez' for key 'proizvodi.naziv'","sqlState":"23000","timestamp":"2026-04-15T18:37:10.034Z"}
+{"level":"info","message":"Backend spreman na portu 5000","timestamp":"2026-04-15T18:39:15.713Z"}
+{"level":"info","message":"Uspješno povezano na MySQL bazu.","timestamp":"2026-04-15T18:39:15.764Z"}
+{"level":"info","message":"Obrada artikla: Laptop x (+1)","timestamp":"2026-04-15T19:20:55.130Z"}
+{"level":"info","message":"Backend spreman na portu 5000","timestamp":"2026-04-15T21:03:26.515Z"}
+{"level":"warn","message":"Pokušaj 1/10: Greška pri povezivanju - pokušavam ponovno za 1000ms","timestamp":"2026-04-15T21:03:26.535Z"}
+{"level":"error","message":"Greška baze podataka: ECONNREFUSED","timestamp":"2026-04-15T21:03:26.536Z"}
+{"level":"warn","message":"Pokušaj 2/10: Greška pri povezivanju - pokušavam ponovno za 2000ms","timestamp":"2026-04-15T21:03:27.537Z"}
+{"level":"warn","message":"Pokušaj 3/10: Greška pri povezivanju - pokušavam ponovno za 4000ms","timestamp":"2026-04-15T21:03:29.541Z"}
+{"level":"warn","message":"Pokušaj 4/10: Greška pri povezivanju - pokušavam ponovno za 8000ms","timestamp":"2026-04-15T21:03:33.544Z"}
+{"level":"warn","message":"Pokušaj 5/10: Greška pri povezivanju - pokušavam ponovno za 16000ms","timestamp":"2026-04-15T21:03:41.553Z"}
+{"level":"warn","message":"Pokušaj 6/10: Greška pri povezivanju - pokušavam ponovno za 32000ms","timestamp":"2026-04-15T21:03:57.554Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T21:04:06.386Z"}
+{"level":"error","message":"SQL Greška: Can't add new command when connection is in closed state","timestamp":"2026-04-15T21:04:20.682Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T21:04:20.692Z"}
+{"level":"error","message":"SQL Greška: Can't add new command when connection is in closed state","timestamp":"2026-04-15T21:04:27.119Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T21:04:27.125Z"}
+{"level":"warn","message":"Pokušaj 7/10: Greška pri povezivanju - pokušavam ponovno za 64000ms","timestamp":"2026-04-15T21:04:29.554Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T21:04:31.538Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T21:04:32.123Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T21:04:32.269Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T21:04:32.415Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T21:04:32.618Z"}
+{"level":"error","message":"SQL Greška: Can't add new command when connection is in closed state","timestamp":"2026-04-15T21:05:13.670Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T21:05:13.678Z"}
+{"level":"warn","message":"Pokušaj 8/10: Greška pri povezivanju - pokušavam ponovno za 128000ms","timestamp":"2026-04-15T21:05:33.557Z"}
+{"level":"warn","message":"Pokušaj 9/10: Greška pri povezivanju - pokušavam ponovno za 256000ms","timestamp":"2026-04-15T21:07:41.564Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T21:08:57.814Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T21:08:59.096Z"}
+{"level":"error","message":"SQL Greška: Can't add new command when connection is in closed state","timestamp":"2026-04-15T21:09:02.284Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T21:09:02.291Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T21:10:49.230Z"}
+{"level":"error","message":"SQL Greška: Can't add new command when connection is in closed state","timestamp":"2026-04-15T21:10:52.848Z"}
+{"fatal":true,"level":"error","timestamp":"2026-04-15T21:10:52.858Z"}
+{"level":"info","message":"Backend servis pokrenut na portu 5000","timestamp":"2026-04-15T21:11:12.110Z"}
+{"level":"info","message":"Uspješno povezano na MySQL bazu.","timestamp":"2026-04-15T21:11:12.226Z"}
+{"level":"info","message":"Obrada artikla: Laptop x (Dodano: 1)","timestamp":"2026-04-15T21:11:22.529Z"}
+{"level":"info","message":"Obrada artikla: Laptop x (Dodano: 1)","timestamp":"2026-04-15T21:11:26.887Z"}
+{"level":"info","message":"Obrada artikla: Laptop x (Dodano: 1)","timestamp":"2026-04-15T21:11:32.792Z"}
+{"level":"info","message":"Obrisan proizvod sa ID: 3","timestamp":"2026-04-15T21:12:09.802Z"}
+{"level":"info","message":"Obrisan proizvod sa ID: 4","timestamp":"2026-04-15T21:12:14.011Z"}
+{"level":"info","message":"Obrisan proizvod sa ID: 5","timestamp":"2026-04-15T21:12:17.334Z"}
+{"level":"info","message":"Obrada artikla: Laptop x (Dodano: 1)","timestamp":"2026-04-15T21:12:42.405Z"}
+{"level":"info","message":"Obrada artikla: Laptop x (Dodano: 1)","timestamp":"2026-04-15T21:12:45.270Z"}
+{"level":"info","message":"Obrada artikla: Laptop x (Dodano: 1)","timestamp":"2026-04-15T21:12:55.272Z"}
+{"level":"info","message":"SIGTERM primljen. Zatvaram MySQL konekciju...","timestamp":"2026-04-15T21:13:06.883Z"}
+{"level":"info","message":"Backend servis pokrenut na portu 5000","timestamp":"2026-04-15T21:13:07.865Z"}
+{"level":"info","message":"Uspješno povezano na MySQL bazu.","timestamp":"2026-04-15T21:13:07.894Z"}
+{"level":"info","message":"Obrada artikla: Laptop x (+1)","timestamp":"2026-04-15T21:13:22.686Z"}
+{"level":"info","message":"Backend servis pokrenut na portu 5000","timestamp":"2026-04-15T21:13:39.915Z"}
+{"level":"info","message":"Uspješno povezano na MySQL bazu.","timestamp":"2026-04-15T21:13:39.937Z"}
+{"level":"info","message":"Obrada artikla: Laptop x (+1)","timestamp":"2026-04-15T21:13:48.659Z"}
+{"level":"info","message":"Backend servis pokrenut na portu 5000","timestamp":"2026-04-15T21:14:47.386Z"}
+{"level":"info","message":"Uspješno povezano na MySQL bazu.","timestamp":"2026-04-15T21:14:47.453Z"}
+{"level":"info","message":"Obrada artikla: Laptop (+1)","timestamp":"2026-04-15T21:15:04.184Z"}
+{"level":"info","message":"Backend servis pokrenut na portu 5000","timestamp":"2026-04-15T21:16:03.096Z"}
+{"level":"info","message":"Uspješno povezano na MySQL bazu.","timestamp":"2026-04-15T21:16:03.139Z"}
+{"level":"info","message":"Obrada artikla: Laptop x (+1)","timestamp":"2026-04-15T21:16:09.786Z"}
+{"level":"info","message":"Obrada artikla: Laptop x (+1)","timestamp":"2026-04-15T21:16:13.178Z"}

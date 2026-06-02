@@ -119,3 +119,35 @@
 {"level":"info","message":"Uspješno povezano na MySQL bazu.","timestamp":"2026-04-15T21:16:03.139Z"}
 {"level":"info","message":"Obrada artikla: Laptop x (+1)","timestamp":"2026-04-15T21:16:09.786Z"}
 {"level":"info","message":"Obrada artikla: Laptop x (+1)","timestamp":"2026-04-15T21:16:13.178Z"}
+{"level":"info","message":"Backend servis pokrenut na portu 5000","timestamp":"2026-04-15T21:27:09.411Z"}
+{"level":"warn","message":"Pokušaj 1/10: Baza nije spremna. Re-connect za 1500ms...","timestamp":"2026-04-15T21:27:09.442Z"}
+{"level":"warn","message":"Pokušaj 2/10: Baza nije spremna. Re-connect za 3000ms...","timestamp":"2026-04-15T21:27:10.949Z"}
+{"level":"warn","message":"Pokušaj 3/10: Baza nije spremna. Re-connect za 6000ms...","timestamp":"2026-04-15T21:27:13.973Z"}
+{"level":"info","message":"Uspješno povezano na MySQL bazu.","timestamp":"2026-04-15T21:27:20.064Z"}
+{"level":"info","message":"Obrada artikla: Laptop x (+1)","timestamp":"2026-04-15T21:27:35.150Z"}
+{"level":"info","message":"Obrada artikla: Laptop x (+1)","timestamp":"2026-04-15T21:27:38.174Z"}
+{"level":"info","message":"Backend servis pokrenut na portu 5000","timestamp":"2026-04-15T21:35:26.331Z"}
+{"level":"info","message":"Uspješno povezano na MySQL bazu.","timestamp":"2026-04-15T21:35:26.384Z"}
+{"level":"info","message":"Baza je automatski konfigurisana (Unique pravilo postavljeno).","timestamp":"2026-04-15T21:35:26.550Z"}
+{"level":"info","message":"Obrada artikla: Laptop (+1)","timestamp":"2026-04-15T21:36:48.625Z"}
+{"level":"info","message":"Obrada artikla: Laptop x (+1)","timestamp":"2026-04-15T21:36:52.330Z"}
+{"level":"info","message":"Backend servis pokrenut na portu 5000","timestamp":"2026-04-16T12:48:01.997Z"}
+{"level":"warn","message":"Pokušaj 1/10: Baza nije spremna. Re-connect za 1500ms...","timestamp":"2026-04-16T12:48:02.012Z"}
+{"level":"warn","message":"Pokušaj 2/10: Baza nije spremna. Re-connect za 3000ms...","timestamp":"2026-04-16T12:48:03.520Z"}
+{"level":"warn","message":"Pokušaj 3/10: Baza nije spremna. Re-connect za 6000ms...","timestamp":"2026-04-16T12:48:06.524Z"}
+{"level":"info","message":"Uspješno povezano na MySQL bazu.","timestamp":"2026-04-16T12:48:12.644Z"}
+{"level":"info","message":"Baza je automatski konfigurisana (Unique pravilo postavljeno).","timestamp":"2026-04-16T12:48:12.759Z"}
+{"level":"info","message":"Backend servis pokrenut na portu 5000","timestamp":"2026-04-16T12:48:46.026Z"}
+{"level":"info","message":"Uspješno povezano na MySQL bazu.","timestamp":"2026-04-16T12:48:46.075Z"}
+{"level":"info","message":"Baza je automatski konfigurisana (Unique pravilo postavljeno).","timestamp":"2026-04-16T12:48:46.151Z"}
+{"level":"info","message":"Obrada artikla: Laptop (+1)","timestamp":"2026-04-16T12:49:03.894Z"}
+{"level":"info","message":"Obrada artikla: Mobitel  (+5)","timestamp":"2026-04-16T12:49:15.555Z"}
+{"level":"info","message":"Backend servis pokrenut na portu 5000","timestamp":"2026-04-16T15:28:19.386Z"}
+{"level":"info","message":"Uspješno povezano na MySQL bazu.","timestamp":"2026-04-16T15:28:19.452Z"}
+{"level":"info","message":"Baza je automatski konfigurisana (Unique pravilo postavljeno).","timestamp":"2026-04-16T15:28:19.554Z"}
+{"level":"info","message":"Obrada artikla: Laptop x (+1)","timestamp":"2026-04-16T15:28:36.497Z"}
+{"level":"info","message":"Backend servis pokrenut na portu 5000","timestamp":"2026-04-16T15:36:59.117Z"}
+{"level":"info","message":"Uspješno povezano na MySQL bazu.","timestamp":"2026-04-16T15:36:59.213Z"}
+{"level":"info","message":"Baza je automatski konfigurisana (Unique pravilo postavljeno).","timestamp":"2026-04-16T15:36:59.352Z"}
+{"level":"info","message":"Obrada artikla: Laptop x (+1)","timestamp":"2026-04-16T15:40:18.921Z"}
+{"level":"info","message":"Obrada artikla: Mobitel (+1)","timestamp":"2026-04-16T15:51:29.335Z"}

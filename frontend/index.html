@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inventar Pro | Dashboard</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght=300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -95,10 +95,11 @@
     <nav class="navbar sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold text-primary" href="#">
-                <i class="fas fa-boxes-stacked me-2"></i>SKLADIŠTE<span class="text-dark">.IO</span>
+                <img src="https://ZAMIJENI-SA-TVOJIM-BUCKET-NAME.s3.amazonaws.com/logo.png" alt="S3-Logo" style="height: 32px; width: auto; margin-right: 8px; vertical-align: middle;">
+                SKLADIŠTE<span class="text-dark">.IO</span>
             </a>
             <div class="d-flex align-items-center text-muted small">
-                <i class="fas fa-user-circle me-1"></i> Student: <strong>Lamija</strong>
+                <i class="fas fa-user-circle me-1"></i> Student: <strong>Lamija Ahm</strong>
             </div>
         </div>
     </nav>
@@ -156,7 +157,13 @@
     </div>
 
     <script>
-        const API_URL = 'http://127.0.0.1:5000/api/proizvodi';
+        // PAMETAN URL ZA AWS DEPLOYMENT:
+        // Ako aplikaciju pokrećeš lokalno (localhost), skripta koristi lokalni backend na portu 5000.
+        // Kada se postavi na AWS iza Application Load Balancera (ALB), automatski koristi relativnu putanju '/api/proizvodi'
+        // čime u potpunosti izbjegavamo CORS greške i hardkodiranje IP adresa unutar koda!
+        const API_URL = (window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost')
+            ? 'http://127.0.0.1:5000/api/proizvodi'
+            : '/api/proizvodi';
 
         async function ucitajProizvode() {
             try {

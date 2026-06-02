@@ -60,6 +60,22 @@ function connectToDB(attemptNumber = 1) {
         }
         logger.info('Uspješno povezano na MySQL bazu.');
 
+        // --- DODANO: AUTOMATSKO POSTAVLJANJE UNIQUE KLJUČA ---
+        const setupSQL = "ALTER TABLE proizvodi ADD UNIQUE (naziv);";
+        db.query(setupSQL, (setupErr) => {
+            if (setupErr) {
+                // 1061 = Duplicate key name (ključ već postoji, što znači da je sve ok)
+                if (setupErr.errno === 1061) {
+                    logger.info('Pravilo za unikatni naziv već postoji. Baza je spremna.');
+                } else {
+                    logger.warn('Napomena: Baza ima duplikate, pa nije mogla postaviti unikatno pravilo. Prvo obriši duplikate iz tabele!');
+                }
+            } else {
+                logger.info('Baza je automatski konfigurisana (Unique pravilo postavljeno).');
+            }
+        });
+        // -----------------------------------------------------
+
         db.on('error', (err) => {
             logger.error(`Greška baze (${err.code}). Reconnecting...`);
             if (err.code === 'PROTOCOL_CONNECTION_LOST' || err.code === 'ECONNRESET') {

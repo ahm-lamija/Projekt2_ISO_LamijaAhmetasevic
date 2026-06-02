@@ -5,7 +5,6 @@ const winston = require('winston');
 const path = require('path');
 const fs = require('fs');
 
-
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -31,12 +30,13 @@ const logger = winston.createLogger({
     ],
 });
 
-// --- KONFIGURACIJA BAZE (DIREKTNO SPOJENO NA AWS) ---
+// --- KONFIGURACIJA BAZE (SADA PREKO process.env) ---
 const dbConfig = {
-    host: 'projekt2-baza.cfjj96d2xi2r.us-east-1.rds.amazonaws.com',
-    user: 'admin',
-    password: 'Lozinka123!', // <-- Ako ti je lozinka baze drugačija, upiši je ovdje između navodnika
-    database: 'projekat2_db'
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER || 'admin',
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME || 'projekat2_db',
+    port: parseInt(process.env.DB_PORT) || 3306
 };
 
 let db;
@@ -45,22 +45,29 @@ function connectToDB(attemptNumber = 1) {
     const maxAttempts = 10;
     const baseDelay = 1500;
 
+    // Provjera da li su unijete ključne varijable
+    if (!dbConfig.host || !dbConfig.password) {
+        logger.error('KRITIČNA GREŠKA: Nedostaju mrežne varijable DB_HOST ili DB_PASSWORD unutar Docker okruženja!');
+        process.exit(1);
+    }
+
     db = mysql.createConnection(dbConfig);
 
     db.connect(err => {
         if (err) {
             if (attemptNumber <= maxAttempts) {
                 const delay = baseDelay * Math.pow(2, attemptNumber - 1);
-                logger.warn(`Pokušaj ${attemptNumber}/${maxAttempts}: Baza nije spremna. Re-connect za ${delay}ms...`);
+                logger.warn(`Pokušaj ${attemptNumber}/${maxAttempts}: Baza nije spremna. Re-connect za ${delay}ms... Greška: ${err.message}`);
                 setTimeout(() => connectToDB(attemptNumber + 1), delay);
             } else {
-                logger.error('KRITIČNA GREŠKA: Nije moguće spojiti se na bazu.');
+                logger.error('KRITIČNA GREŠKA: Nije moguće spojiti se na bazu nakon maksimalnog broja pokušaja.');
                 process.exit(1);
             }
             return;
         }
-        logger.info('Uspješno povezano na MySQL bazu.');
-// --- AUTOMATSKO KREIRANJE TABELE I UBACIVANJE PODATAKA ---
+        logger.info('Uspješno povezano na AWS MySQL bazu.');
+
+        // --- AUTOMATSKO KREIRANJE TABELE I UBACIVANJE PODATAKA ---
         const createTableSQL = `
             CREATE TABLE IF NOT EXISTS proizvodi (
                 id INT AUTO_INCREMENT PRIMARY KEY,
@@ -83,22 +90,20 @@ function connectToDB(attemptNumber = 1) {
                 });
             }
         });
-        // ---------------------------------------------------------
-        // --- DODANO: AUTOMATSKO POSTAVLJANJE UNIQUE KLJUČA ---
+
+        // --- AUTOMATSKO POSTAVLJANJE UNIQUE KLJUČA ---
         const setupSQL = "ALTER TABLE proizvodi ADD UNIQUE (naziv);";
         db.query(setupSQL, (setupErr) => {
             if (setupErr) {
-                // 1061 = Duplicate key name (ključ već postoji, što znači da je sve ok)
                 if (setupErr.errno === 1061) {
                     logger.info('Pravilo za unikatni naziv već postoji. Baza je spremna.');
                 } else {
-                    logger.warn('Napomena: Baza ima duplikate, pa nije mogla postaviti unikatno pravilo. Prvo obriši duplikate iz tabele!');
+                    logger.warn('Napomena: Baza ima duplikate, pa nije mogla postaviti unikatno pravilo.');
                 }
             } else {
                 logger.info('Baza je automatski konfigurisana (Unique pravilo postavljeno).');
             }
         });
-        // -----------------------------------------------------
 
         db.on('error', (err) => {
             logger.error(`Greška baze (${err.code}). Reconnecting...`);
@@ -124,7 +129,7 @@ app.get('/api/proizvodi', (req, res) => {
     });
 });
 
-// POST: DODAVANJE (Ovdje je bila greška - SADA JE ISPRAVLJENO)
+// POST: Dodavanje i sabiranje količine ako artikal postoji
 app.post('/api/proizvodi', (req, res) => {
     const { naziv, kolicina } = req.body;
     const kol = parseInt(kolicina);
@@ -133,7 +138,6 @@ app.post('/api/proizvodi', (req, res) => {
         return res.status(400).json({error: 'Naziv i količina su obavezni'}); 
     }
 
-    // Ova logika sprečava duplikate i sabira kolicinu:
     const sql = `
         INSERT INTO proizvodi (naziv, kolicina) 
         VALUES (?, ?) 
@@ -169,7 +173,7 @@ app.delete('/api/proizvodi/:id', (req, res) => {
     });
 });
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => logger.info(`Backend servis pokrenut na portu ${PORT}`));
 
 process.on('SIGTERM', () => {

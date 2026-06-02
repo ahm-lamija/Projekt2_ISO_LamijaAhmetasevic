@@ -5,6 +5,7 @@ const winston = require('winston');
 const path = require('path');
 const fs = require('fs');
 
+
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -30,12 +31,12 @@ const logger = winston.createLogger({
     ],
 });
 
-// --- KONFIGURACIJA BAZE ---
+// --- KONFIGURACIJA BAZE (DIREKTNO SPOJENO NA AWS) ---
 const dbConfig = {
-    host: process.env.DB_HOST || 'localhost',
-    user: process.env.DB_USER || 'root',
-    password: process.env.DB_PASSWORD || 'password',
-    database: process.env.DB_NAME || 'inventar_db'
+    host: 'projekt2-baza.cfjj96d2xi2r.us-east-1.rds.amazonaws.com',
+    user: 'admin',
+    password: 'Lozinka123!', // <-- Ako ti je lozinka baze drugačija, upiši je ovdje između navodnika
+    database: 'projekat2_db'
 };
 
 let db;
@@ -59,7 +60,30 @@ function connectToDB(attemptNumber = 1) {
             return;
         }
         logger.info('Uspješno povezano na MySQL bazu.');
-
+// --- AUTOMATSKO KREIRANJE TABELE I UBACIVANJE PODATAKA ---
+        const createTableSQL = `
+            CREATE TABLE IF NOT EXISTS proizvodi (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                naziv VARCHAR(255) NOT NULL,
+                kolicina INT DEFAULT 0
+            );
+        `;
+        db.query(createTableSQL, (err) => {
+            if (err) {
+                logger.error('Greška pri kreiranju tabele: ' + err.message);
+            } else {
+                logger.info('Tabela "proizvodi" je spremna.');
+                
+                // Provjeravamo da li već ima podataka, da ne ubacujemo duplikate svaki put
+                db.query('SELECT COUNT(*) AS count FROM proizvodi', (err, rows) => {
+                    if (!err && rows[0].count === 0) {
+                        const insertSQL = `INSERT INTO proizvodi (naziv, kolicina) VALUES ('Laptop', 10), ('Monitor', 5);`;
+                        db.query(insertSQL, () => logger.info('Početni podaci (Laptop, Monitor) ubačeni u AWS bazu!'));
+                    }
+                });
+            }
+        });
+        // ---------------------------------------------------------
         // --- DODANO: AUTOMATSKO POSTAVLJANJE UNIQUE KLJUČA ---
         const setupSQL = "ALTER TABLE proizvodi ADD UNIQUE (naziv);";
         db.query(setupSQL, (setupErr) => {

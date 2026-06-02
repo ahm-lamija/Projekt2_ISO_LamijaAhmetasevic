@@ -1,0 +1,69 @@
+{"level":"info","message":"Backend servis pokrenut na portu 5000","timestamp":"2026-06-02T19:12:59.528Z"}
+{"level":"warn","message":"Pokušaj 1/10: Baza nije spremna. Re-connect za 1500ms...","timestamp":"2026-06-02T19:13:00.285Z"}
+{"level":"warn","message":"Pokušaj 2/10: Baza nije spremna. Re-connect za 3000ms...","timestamp":"2026-06-02T19:13:01.874Z"}
+{"level":"warn","message":"Pokušaj 3/10: Baza nije spremna. Re-connect za 6000ms...","timestamp":"2026-06-02T19:13:04.905Z"}
+{"level":"warn","message":"Pokušaj 4/10: Baza nije spremna. Re-connect za 12000ms...","timestamp":"2026-06-02T19:13:10.941Z"}
+{"level":"warn","message":"Pokušaj 5/10: Baza nije spremna. Re-connect za 24000ms...","timestamp":"2026-06-02T19:13:22.965Z"}
+{"level":"warn","message":"Pokušaj 6/10: Baza nije spremna. Re-connect za 48000ms...","timestamp":"2026-06-02T19:13:46.981Z"}
+{"level":"warn","message":"Pokušaj 7/10: Baza nije spremna. Re-connect za 96000ms...","timestamp":"2026-06-02T19:14:35.052Z"}
+{"level":"warn","message":"Pokušaj 8/10: Baza nije spremna. Re-connect za 192000ms...","timestamp":"2026-06-02T19:16:11.075Z"}
+{"level":"info","message":"Backend servis pokrenut na portu 5000","timestamp":"2026-06-02T19:16:35.641Z"}
+{"level":"warn","message":"Pokušaj 1/10: Baza nije spremna. Re-connect za 1500ms...","timestamp":"2026-06-02T19:16:35.897Z"}
+{"level":"warn","message":"Pokušaj 2/10: Baza nije spremna. Re-connect za 3000ms...","timestamp":"2026-06-02T19:16:37.432Z"}
+{"level":"warn","message":"Pokušaj 3/10: Baza nije spremna. Re-connect za 6000ms...","timestamp":"2026-06-02T19:16:40.461Z"}
+{"level":"warn","message":"Pokušaj 4/10: Baza nije spremna. Re-connect za 12000ms...","timestamp":"2026-06-02T19:16:46.483Z"}
+{"level":"warn","message":"Pokušaj 5/10: Baza nije spremna. Re-connect za 24000ms...","timestamp":"2026-06-02T19:16:58.519Z"}
+{"level":"warn","message":"Pokušaj 6/10: Baza nije spremna. Re-connect za 48000ms...","timestamp":"2026-06-02T19:17:22.536Z"}
+{"level":"warn","message":"Pokušaj 7/10: Baza nije spremna. Re-connect za 96000ms...","timestamp":"2026-06-02T19:18:10.574Z"}
+{"level":"warn","message":"Pokušaj 8/10: Baza nije spremna. Re-connect za 192000ms...","timestamp":"2026-06-02T19:19:46.601Z"}
+{"level":"info","message":"Backend servis pokrenut na portu 5000","timestamp":"2026-06-02T19:21:58.933Z"}
+{"level":"warn","message":"Pokušaj 1/10: Baza nije spremna. Re-connect za 1500ms...","timestamp":"2026-06-02T19:21:58.966Z"}
+{"level":"warn","message":"Pokušaj 2/10: Baza nije spremna. Re-connect za 3000ms...","timestamp":"2026-06-02T19:22:00.505Z"}
+{"level":"warn","message":"Pokušaj 3/10: Baza nije spremna. Re-connect za 6000ms...","timestamp":"2026-06-02T19:22:03.589Z"}
+{"level":"warn","message":"Pokušaj 4/10: Baza nije spremna. Re-connect za 12000ms...","timestamp":"2026-06-02T19:22:09.616Z"}
+{"level":"warn","message":"Pokušaj 5/10: Baza nije spremna. Re-connect za 24000ms...","timestamp":"2026-06-02T19:22:21.642Z"}
+{"level":"warn","message":"Pokušaj 6/10: Baza nije spremna. Re-connect za 48000ms...","timestamp":"2026-06-02T19:22:45.659Z"}
+{"level":"warn","message":"Pokušaj 7/10: Baza nije spremna. Re-connect za 96000ms...","timestamp":"2026-06-02T19:23:33.725Z"}
+{"level":"info","message":"Backend servis pokrenut na portu 5000","timestamp":"2026-06-02T19:24:38.824Z"}
+{"level":"warn","message":"Pokušaj 1/10: Baza nije spremna. Re-connect za 1500ms...","timestamp":"2026-06-02T19:24:38.856Z"}
+{"level":"warn","message":"Pokušaj 2/10: Baza nije spremna. Re-connect za 3000ms...","timestamp":"2026-06-02T19:24:40.377Z"}
+{"level":"warn","message":"Pokušaj 3/10: Baza nije spremna. Re-connect za 6000ms...","timestamp":"2026-06-02T19:24:43.419Z"}
+{"level":"warn","message":"Pokušaj 4/10: Baza nije spremna. Re-connect za 12000ms...","timestamp":"2026-06-02T19:24:49.461Z"}
+{"level":"warn","message":"Pokušaj 5/10: Baza nije spremna. Re-connect za 24000ms...","timestamp":"2026-06-02T19:25:01.494Z"}
+{"level":"warn","message":"Pokušaj 6/10: Baza nije spremna. Re-connect za 48000ms...","timestamp":"2026-06-02T19:25:25.531Z"}
+{"level":"warn","message":"Pokušaj 7/10: Baza nije spremna. Re-connect za 96000ms...","timestamp":"2026-06-02T19:26:13.552Z"}
+{"level":"info","message":"Backend servis pokrenut na portu 5000","timestamp":"2026-06-02T19:26:25.484Z"}
+{"level":"warn","message":"Pokušaj 1/10: Baza nije spremna. Re-connect za 1500ms...","timestamp":"2026-06-02T19:26:35.493Z"}
+{"level":"warn","message":"Pokušaj 2/10: Baza nije spremna. Re-connect za 3000ms...","timestamp":"2026-06-02T19:26:47.009Z"}
+{"level":"warn","message":"Pokušaj 3/10: Baza nije spremna. Re-connect za 6000ms...","timestamp":"2026-06-02T19:27:00.036Z"}
+{"level":"warn","message":"Pokušaj 4/10: Baza nije spremna. Re-connect za 12000ms...","timestamp":"2026-06-02T19:27:16.052Z"}
+{"level":"info","message":"Backend servis pokrenut na portu 5000","timestamp":"2026-06-02T19:27:20.016Z"}
+{"level":"warn","message":"Pokušaj 1/10: Baza nije spremna. Re-connect za 1500ms...","timestamp":"2026-06-02T19:27:30.021Z"}
+{"level":"warn","message":"Pokušaj 2/10: Baza nije spremna. Re-connect za 3000ms...","timestamp":"2026-06-02T19:27:41.541Z"}
+{"level":"warn","message":"Pokušaj 3/10: Baza nije spremna. Re-connect za 6000ms...","timestamp":"2026-06-02T19:27:54.558Z"}
+{"level":"warn","message":"Pokušaj 4/10: Baza nije spremna. Re-connect za 12000ms...","timestamp":"2026-06-02T19:28:10.574Z"}
+{"level":"info","message":"Backend servis pokrenut na portu 5000","timestamp":"2026-06-02T19:28:30.569Z"}
+{"level":"warn","message":"Pokušaj 1/10: Baza nije spremna. Re-connect za 1500ms...","timestamp":"2026-06-02T19:28:30.598Z"}
+{"level":"warn","message":"Pokušaj 2/10: Baza nije spremna. Re-connect za 3000ms...","timestamp":"2026-06-02T19:28:32.137Z"}
+{"level":"warn","message":"Pokušaj 3/10: Baza nije spremna. Re-connect za 6000ms...","timestamp":"2026-06-02T19:28:35.170Z"}
+{"level":"warn","message":"Pokušaj 4/10: Baza nije spremna. Re-connect za 12000ms...","timestamp":"2026-06-02T19:28:41.197Z"}
+{"level":"warn","message":"Pokušaj 5/10: Baza nije spremna. Re-connect za 24000ms...","timestamp":"2026-06-02T19:28:53.226Z"}
+{"level":"info","message":"Backend servis pokrenut na portu 5000","timestamp":"2026-06-02T19:29:18.899Z"}
+{"level":"warn","message":"Pokušaj 1/10: Baza nije spremna. Re-connect za 1500ms...","timestamp":"2026-06-02T19:29:18.933Z"}
+{"level":"warn","message":"Pokušaj 2/10: Baza nije spremna. Re-connect za 3000ms...","timestamp":"2026-06-02T19:29:20.461Z"}
+{"level":"warn","message":"Pokušaj 3/10: Baza nije spremna. Re-connect za 6000ms...","timestamp":"2026-06-02T19:29:23.482Z"}
+{"level":"warn","message":"Pokušaj 4/10: Baza nije spremna. Re-connect za 12000ms...","timestamp":"2026-06-02T19:29:29.522Z"}
+{"level":"warn","message":"Pokušaj 5/10: Baza nije spremna. Re-connect za 24000ms...","timestamp":"2026-06-02T19:29:41.547Z"}
+{"level":"warn","message":"Pokušaj 6/10: Baza nije spremna. Re-connect za 48000ms...","timestamp":"2026-06-02T19:30:05.577Z"}
+{"level":"warn","message":"Pokušaj 7/10: Baza nije spremna. Re-connect za 96000ms...","timestamp":"2026-06-02T19:30:53.617Z"}
+{"level":"info","message":"Backend servis pokrenut na portu 5000","timestamp":"2026-06-02T19:31:54.090Z"}
+{"level":"warn","message":"Pokušaj 1/10: Baza nije spremna. Re-connect za 1500ms...","timestamp":"2026-06-02T19:32:04.090Z"}
+{"level":"warn","message":"Pokušaj 2/10: Baza nije spremna. Re-connect za 3000ms...","timestamp":"2026-06-02T19:32:15.615Z"}
+{"level":"info","message":"Backend servis pokrenut na portu 5000","timestamp":"2026-06-02T19:32:32.597Z"}
+{"level":"warn","message":"Pokušaj 1/10: Baza nije spremna. Re-connect za 1500ms...","timestamp":"2026-06-02T19:32:42.602Z"}
+{"level":"warn","message":"Pokušaj 2/10: Baza nije spremna. Re-connect za 3000ms...","timestamp":"2026-06-02T19:32:54.115Z"}
+{"level":"warn","message":"Pokušaj 3/10: Baza nije spremna. Re-connect za 6000ms...","timestamp":"2026-06-02T19:33:07.132Z"}
+{"level":"info","message":"Backend servis pokrenut na portu 5000","timestamp":"2026-06-02T19:33:10.297Z"}
+{"level":"warn","message":"Pokušaj 1/10: Baza nije spremna. Re-connect za 1500ms...","timestamp":"2026-06-02T19:33:20.311Z"}
+{"level":"warn","message":"Pokušaj 2/10: Baza nije spremna. Re-connect za 3000ms...","timestamp":"2026-06-02T19:33:31.846Z"}
+{"level":"warn","message":"Pokušaj 3/10: Baza nije spremna. Re-connect za 6000ms...","timestamp":"2026-06-02T19:33:44.857Z"}

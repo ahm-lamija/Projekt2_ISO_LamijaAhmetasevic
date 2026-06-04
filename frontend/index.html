@@ -161,7 +161,8 @@
         // Ako aplikaciju pokrećeš lokalno (localhost), skripta koristi lokalni backend na portu 5000.
         // Kada se postavi na AWS iza Application Load Balancera (ALB), automatski koristi relativnu putanju '/api/proizvodi'
         // čime u potpunosti izbjegavamo CORS greške i hardkodiranje IP adresa unutar koda!
-        const API_URL = "http://50.16.10.41:5000";
+        const CURRENT_DNS = window.location.hostname; 
+        const API_URL = `http://${CURRENT_DNS}:5000`;
 
         async function ucitajProizvode() {
             try {

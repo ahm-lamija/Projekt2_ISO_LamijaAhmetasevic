@@ -162,7 +162,7 @@
         // Kada se postavi na AWS iza Application Load Balancera (ALB), automatski koristi relativnu putanju '/api/proizvodi'
         // čime u potpunosti izbjegavamo CORS greške i hardkodiranje IP adresa unutar koda!
         const CURRENT_DNS = window.location.hostname; 
-        const API_URL = `http://${CURRENT_DNS}:5000`;
+        const API_URL = '/api/proizvodi';
 
         async function ucitajProizvode() {
             try {
